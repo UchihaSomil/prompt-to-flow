@@ -1,0 +1,29 @@
+@keyframes dashedLine {
+  to {
+    stroke-dashoffset: -20;
+  }
+}
+
+.animated-edge {
+  stroke-dasharray: 5 5;
+  animation: dashedLine 1s linear infinite;
+}
+
+.react-flow__edge-path {
+  stroke-width: 2;
+}
+
+.react-flow__edge.animated-edge .react-flow__edge-path {
+  stroke-dasharray: 5,5;
+}
+
+.react-flow__node {
+  width: max-content;
+}
+
+.react-flow__handle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+}
